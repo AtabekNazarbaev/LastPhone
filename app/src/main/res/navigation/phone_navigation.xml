@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phone_navigation"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="uz.texnopos.phoneinfo.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <fragment
+        android:id="@+id/appleFragment"
+        android:name="uz.texnopos.phoneinfo.viewPager.AppleFragment"
+        android:label="AppleFragment"
+        tools:layout="@layout/fragment_apple" />
+    <fragment
+        android:id="@+id/redmiFragment"
+        android:name="uz.texnopos.phoneinfo.viewPager.RedmiFragment"
+        android:label="RedmiFragment"
+        tools:layout="@layout/fragment_redmi" />
+    <fragment
+        android:id="@+id/samsungFragment"
+        android:name="uz.texnopos.phoneinfo.viewPager.SamsungFragment"
+        android:label="SamsungFragment"
+        tools:layout="@layout/fragment_samsung" />
+    <fragment
+        android:id="@+id/placeholderFragment"
+        android:name="uz.texnopos.phoneinfo.ui.main.PlaceholderFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
+</navigation>
